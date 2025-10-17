@@ -8,7 +8,7 @@ export const getTheme = (mode: "light" | "dark") =>
       ...(mode === "light"
         ? {
             // Light mode ranglari
-            primary: { main: "#19c6d2ff" },
+            primary: { main: "#4255FF" },
             background: { default: "#f5f5f5", paper: "#fff" },
           }
         : {

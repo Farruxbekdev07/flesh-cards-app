@@ -14,10 +14,10 @@ import { Controller, useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
-import { getTheme } from "../styles/theme";
-import { auth } from "../services/firebase";
+import { getTheme } from "@/styles/theme";
+import { auth } from "@/services/firebase";
 import { UserFormData } from "@/types/user";
-import { toggleTheme } from "../redux/themeSlice";
+import { toggleTheme } from "@/redux/themeSlice";
 
 export default function Register() {
   const themeMode = useSelector((state: any) => state.theme.mode);

@@ -5,8 +5,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useDispatch, useSelector } from "react-redux";
 import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 
-import { DRAWER_WIDTH } from "../types";
-import { toggleTheme } from "../redux/themeSlice";
+import { DRAWER_WIDTH } from "@/types";
+import { toggleTheme } from "@/redux/themeSlice";
 
 interface Props {
   handleDrawerToggle: () => void;

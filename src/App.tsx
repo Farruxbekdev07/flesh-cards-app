@@ -18,7 +18,7 @@ interface Props {
 }
 
 function App(props: Props) {
-  const token = "token";
+  const token = "";
   const { window } = props;
   const [isClosing, setIsClosing] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
