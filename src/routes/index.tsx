@@ -39,10 +39,6 @@ export interface ISidebarRoute {
 
 export const PRIVATE_ROUTES: IRoute[] = [
   {
-    path: HOME,
-    component: <Home />,
-  },
-  {
     path: LEARN,
     component: <Learn />,
   },
@@ -69,6 +65,10 @@ export const PRIVATE_ROUTES: IRoute[] = [
 ];
 
 export const PUBLIC_ROUTES: IRoute[] = [
+  {
+    path: HOME,
+    component: <Home />,
+  },
   {
     path: LOGIN,
     component: <Login />,
