@@ -5,6 +5,8 @@ export const PATHS = {
   LEARN: "/learn",
   PROFILE: "/profile",
   REGISTER: "/register",
+  SETTINGS: "/settings",
   DASHBOARD: "/dashboard",
+  VOCABULARY: "/vocabulary",
   STATISTICS: "/statistics",
 };

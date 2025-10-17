@@ -1,9 +1,8 @@
 import React from "react";
-import HomeIcon from "@mui/icons-material/Home";
 import SchoolIcon from "@mui/icons-material/School";
-import PersonIcon from "@mui/icons-material/Person";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
+import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
 
 import { PATHS } from "./paths";
 import Home from "../pages/Home";
@@ -11,10 +10,22 @@ import Learn from "../pages/Learn";
 import Login from "../pages/Login";
 import Profile from "../pages/Profile";
 import Register from "../pages/Register";
+import Settings from "../pages/Settings";
 import Dashboard from "../pages/Dashboard";
 import Statistics from "../pages/Statistics";
+import Vocabulary from "../pages/Vocabulary";
 
-const { HOME, DASHBOARD, LEARN, LOGIN, PROFILE, STATISTICS, REGISTER } = PATHS;
+const {
+  HOME,
+  LEARN,
+  LOGIN,
+  PROFILE,
+  REGISTER,
+  SETTINGS,
+  DASHBOARD,
+  STATISTICS,
+  VOCABULARY,
+} = PATHS;
 
 export interface IRoute {
   path: string;
@@ -47,6 +58,14 @@ export const PRIVATE_ROUTES: IRoute[] = [
     path: STATISTICS,
     component: <Statistics />,
   },
+  {
+    path: SETTINGS,
+    component: <Settings />,
+  },
+  {
+    path: VOCABULARY,
+    component: <Vocabulary />,
+  },
 ];
 
 export const PUBLIC_ROUTES: IRoute[] = [
@@ -61,11 +80,6 @@ export const PUBLIC_ROUTES: IRoute[] = [
 ];
 
 export const SIDEBAR_ROUTES: ISidebarRoute[] = [
-  {
-    path: HOME,
-    icon: <HomeIcon />,
-    pathName: "Home",
-  },
   {
     path: DASHBOARD,
     icon: <DashboardIcon />,
@@ -82,8 +96,8 @@ export const SIDEBAR_ROUTES: ISidebarRoute[] = [
     pathName: "Learn",
   },
   {
-    path: PROFILE,
-    icon: <PersonIcon />,
-    pathName: "Profile",
+    path: VOCABULARY,
+    icon: <FolderOutlinedIcon />,
+    pathName: "Vocabulary",
   },
 ];
