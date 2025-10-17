@@ -1,5 +1,6 @@
 // packages
 import List from "@mui/material/List";
+import { NavLink } from "react-router-dom";
 import Divider from "@mui/material/Divider";
 import Toolbar from "@mui/material/Toolbar";
 import ListItem from "@mui/material/ListItem";
@@ -8,7 +9,6 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 
 import { SIDEBAR_ROUTES } from "@/routes";
-import { NavLink } from "react-router-dom";
 
 export function TemporaryDrawer() {
   return (

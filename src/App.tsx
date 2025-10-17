@@ -9,9 +9,9 @@ import "./App.css";
 import { PATHS } from "./routes/paths";
 import { DRAWER_WIDTH } from "./types";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
 import { TemporaryDrawer } from "./components/Drawer";
 import { PRIVATE_ROUTES, PUBLIC_ROUTES, type IRoute } from "./routes";
-import Navbar from "./components/Navbar";
 
 interface Props {
   window?: () => Window;
