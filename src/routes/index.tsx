@@ -5,15 +5,15 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
 
 import { PATHS } from "./paths";
-import Home from "../pages/Home";
-import Learn from "../pages/Learn";
-import Login from "../pages/Login";
-import Profile from "../pages/Profile";
-import Register from "../pages/Register";
-import Settings from "../pages/Settings";
-import Dashboard from "../pages/Dashboard";
-import Statistics from "../pages/Statistics";
-import Vocabulary from "../pages/Vocabulary";
+import Home from "@/pages/Home";
+import Learn from "@/pages/Learn";
+import Login from "@/pages/Login";
+import Profile from "@/pages/Profile";
+import Register from "@/pages/Register";
+import Settings from "@/pages/Settings";
+import Dashboard from "@/pages/Dashboard";
+import Statistics from "@/pages/Statistics";
+import Vocabulary from "@/pages/Vocabulary";
 
 const {
   HOME,
@@ -38,10 +38,6 @@ export interface ISidebarRoute {
 }
 
 export const PRIVATE_ROUTES: IRoute[] = [
-  {
-    path: HOME,
-    component: <Home />,
-  },
   {
     path: LEARN,
     component: <Learn />,
@@ -69,6 +65,10 @@ export const PRIVATE_ROUTES: IRoute[] = [
 ];
 
 export const PUBLIC_ROUTES: IRoute[] = [
+  {
+    path: HOME,
+    component: <Home />,
+  },
   {
     path: LOGIN,
     component: <Login />,

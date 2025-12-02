@@ -7,7 +7,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 
-import { SIDEBAR_ROUTES } from "../routes";
+import { SIDEBAR_ROUTES } from "@/routes";
 import { NavLink } from "react-router-dom";
 
 export function TemporaryDrawer() {

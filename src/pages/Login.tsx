@@ -17,10 +17,10 @@ import { Controller, useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { signInWithPopup, signInWithEmailAndPassword } from "firebase/auth";
 
-import { getTheme } from "../styles/theme";
+import { getTheme } from "@/styles/theme";
 import { UserFormData } from "@/types/user";
-import { toggleTheme } from "../redux/themeSlice";
-import { auth, googleProvider } from "../services/firebase";
+import { toggleTheme } from "@/redux/themeSlice";
+import { auth, googleProvider } from "@/services/firebase";
 
 export default function Login() {
   const themeMode = useSelector((state: any) => state.theme.mode);
